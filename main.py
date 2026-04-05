@@ -18,6 +18,7 @@ def load_hisotry():
     if os.path.exists(DB_FILE):
         with open(DB_FILE,'r') as f:
             return json.load(f)
+    # save_history([SYSTEM_PROMPT])
     return [SYSTEM_PROMPT]
 
 def save_history(messages):
@@ -57,6 +58,7 @@ def main():
             model_response = response['message']['content']
     
             print(f"\nLlama: {model_response}\n")
+            messages.append({'role': 'assistant', 'content': model_response})
             save_history(messages)
 
         except Exception as e:
