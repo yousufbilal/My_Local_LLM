@@ -50,7 +50,6 @@ def main():
             continue
 
         messages.append({'role': 'user', 'content': user_input})
-        print(messages)
 
         try:
             response = ollama.chat(model='llama3.2', messages=messages)
