@@ -9,12 +9,12 @@ model = OllamaLLM(model="llama3.2")
 
 #it is important when using RAG to restrict the prompt otherwise the model will halucinate 
 template = """
-ONLY use the reviews provided below to answer the question.
-If the answer is not found in the reviews, say "I don't have enough information."
-Do NOT make up pizza names or any information not in the reviews.
-Here are some relevant reviews: {reviews}
+ONLY use the Pokemon data provided below to answer the question.
+If the answer is not found, say "I don't have enough information."
 
-Here is the question to answer: {questions}
+Here is the relevant Pokemon data: {reviews}
+
+Question: {questions}
 """
 prompt = ChatPromptTemplate.from_template(template)
 
@@ -38,6 +38,7 @@ while True:
 
     print(result)
 
+#implement LangChain's built-in conversational RAG stack so the agent can have context of the conversation
 
 
 # DB_FILE = "chat_history.json"
