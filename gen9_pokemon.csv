@@ -1,0 +1,121 @@
+Number,Name,Type1,Type2,HP,Attack,Defense,Sp.Atk,Sp.Def,Speed,Total,Category,Height(m),Weight(kg),Ability1,Ability2,Hidden Ability,Generation,Region,Legendary/Mythical
+906,Sprigatito,Grass,,45,45,35,45,35,70,275,Grass Cat,0.4,4.1,Overgrow,,,9,Paldea,No
+907,Floragato,Grass,,61,60,45,63,52,91,372,Grass Cat,0.9,12.2,Overgrow,,,9,Paldea,No
+908,Meowscarada,Grass,Dark,76,110,70,81,70,123,530,Magician,1.5,31.2,Overgrow,,,9,Paldea,No
+909,Fuecoco,Fire,,67,45,59,63,40,36,310,Fire Croc,0.4,9.8,Blaze,,,9,Paldea,No
+910,Crocalor,Fire,,81,55,68,81,54,49,388,Fire Croc,1.0,30.7,Blaze,,,9,Paldea,No
+911,Skeledirge,Fire,Ghost,104,75,100,110,75,66,530,Singer,1.6,326.5,Blaze,,,9,Paldea,No
+912,Quaxly,Water,,55,65,45,45,45,50,305,Duckling,0.5,6.1,Torrent,,,9,Paldea,No
+913,Quaxwell,Water,,70,77,60,60,60,65,392,Practicing,1.2,21.5,Torrent,,,9,Paldea,No
+914,Quaquaval,Water,Fighting,85,120,80,85,75,85,530,Dancer,1.8,61.9,Torrent,,,9,Paldea,No
+915,Lechonk,Normal,,54,45,40,35,45,35,254,Hog,0.5,10.2,Aroma Veil,Gluttony,Thick Fat,9,Paldea,No
+916,Oinkologne,Normal,,110,100,75,59,80,65,489,Hog,1.0,120.0,Aroma Veil,Gluttony,Thick Fat,9,Paldea,No
+917,Tarountula,Bug,,35,41,90,25,90,20,301,String Ball,0.3,1.8,Insomnia,Stakeout,,9,Paldea,No
+918,Spidops,Bug,,60,79,92,52,86,35,404,Trap,0.9,16.5,Insomnia,Stakeout,,9,Paldea,No
+919,Nymble,Bug,,33,46,40,45,30,70,264,Grasshopper,0.2,1.0,Swarm,,,9,Paldea,No
+920,Lokix,Bug,Dark,71,102,78,52,55,92,450,Grasshopper,1.0,17.5,Swarm,,,9,Paldea,No
+921,Pawmi,Electric,,45,50,20,40,25,60,240,Mouse,0.3,2.5,Static,Natural Cure,Iron Fist,9,Paldea,No
+922,Pawmo,Electric,Fighting,60,75,40,50,40,85,350,Mouse,0.4,6.5,Volt Absorb,Natural Cure,Iron Fist,9,Paldea,No
+923,Pawmot,Electric,Fighting,70,115,70,70,60,105,490,Double Discharge,0.9,41.5,Volt Absorb,Natural Cure,Iron Fist,9,Paldea,No
+924,Tandemaus,Normal,,50,50,45,40,45,75,305,Couple,0.3,1.8,Run Away,Pickup,Own Tempo,9,Paldea,No
+925,Maushold,Normal,,74,75,70,65,75,111,470,Family,0.3,2.3,Friend Guard,Cheek Pouch,Technician,9,Paldea,No
+926,Fidough,Fairy,,37,55,70,30,55,65,312,Puppy,0.3,10.9,Own Tempo,,,9,Paldea,No
+927,Dachsbun,Fairy,,57,80,99,50,80,95,461,Dog,0.5,14.9,Well-Baked Body,,,9,Paldea,No
+928,Smoliv,Grass,Normal,41,35,45,58,51,30,260,Olive,0.3,6.5,Early Bird,,,9,Paldea,No
+929,Dolliv,Grass,Normal,52,53,60,78,78,47,368,Olive,0.6,11.9,Early Bird,,,9,Paldea,No
+930,Arboliva,Grass,Normal,78,69,90,125,109,39,510,Olive,1.4,48.2,Seed Sower,,,9,Paldea,No
+931,Squawkabilly,Normal,Flying,82,96,51,45,51,92,417,Parrot,0.6,2.4,Intimidate,Hustle,Guts,9,Paldea,No
+932,Nacli,Rock,,55,55,75,35,35,25,280,Rock Salt,0.4,16.0,Purifying Salt,Sturdy,Clear Body,9,Paldea,No
+933,Naclstack,Rock,,60,60,100,35,65,35,355,Rock Salt,0.6,105.0,Purifying Salt,Sturdy,Clear Body,9,Paldea,No
+934,Garganacl,Rock,,100,100,130,45,90,35,500,Rock Salt,2.3,240.0,Purifying Salt,Sturdy,Clear Body,9,Paldea,No
+935,Charcadet,Fire,,40,50,40,70,40,35,275,Fire Child,0.6,10.5,Flash Fire,,,9,Paldea,No
+936,Armarouge,Fire,Psychic,85,60,100,125,80,75,525,Fire Warrior,1.5,85.0,Flash Fire,,,9,Paldea,No
+937,Ceruledge,Fire,Ghost,75,125,80,60,100,85,525,Fire Blades,1.6,62.0,Flash Fire,,,9,Paldea,No
+938,Tadbulb,Electric,,61,31,41,59,35,45,272,EleTadpole,0.3,0.4,Own Tempo,Static,Damp,9,Paldea,No
+939,Bellibolt,Electric,,109,64,67,91,103,45,479,EleFrog,1.2,113.0,Electromorphosis,Static,Damp,9,Paldea,No
+940,Wattrel,Electric,Flying,40,40,35,55,40,70,280,Storm Petrel,0.4,3.6,Wind Power,Volt Absorb,,9,Paldea,No
+941,Kilowattrel,Electric,Flying,70,80,70,100,70,143,533,Storm Petrel,1.4,37.0,Wind Power,Volt Absorb,,9,Paldea,No
+942,Maschiff,Dark,,60,78,50,40,50,50,328,Rascal,0.5,16.0,Intimidate,Run Away,Stench,9,Paldea,No
+943,Mabosstiff,Dark,,80,120,90,60,70,85,505,Boss,1.1,61.0,Intimidate,Guard Dog,Stench,9,Paldea,No
+944,Shroodle,Poison,Normal,40,65,33,55,33,75,301,Toxic Mouse,0.2,0.7,Unburden,Pickpocket,,9,Paldea,No
+945,Grafaiai,Poison,Normal,63,95,65,90,75,97,485,Toxic Monkey,0.7,27.2,Unburden,Poison Touch,,9,Paldea,No
+946,Bramblin,Grass,Ghost,40,65,30,45,35,60,275,Tumbleweed,0.6,0.6,Wind Rider,,,9,Paldea,No
+947,Brambleghast,Grass,Ghost,55,115,70,80,70,90,480,Tumbleweed,1.2,6.0,Wind Rider,,,9,Paldea,No
+948,Toedscool,Ground,Grass,40,40,35,50,100,70,335,Woodear,0.9,33.0,Mycelium Might,,,9,Paldea,No
+949,Toedscruel,Ground,Grass,80,70,65,80,120,100,515,Woodear,1.9,58.0,Mycelium Might,,,9,Paldea,No
+950,Klawf,Rock,,70,100,115,35,55,75,450,Ambush,1.3,79.0,Anger Shell,Shell Armor,,9,Paldea,No
+951,Capsakid,Grass,,50,62,40,62,40,50,304,Spicy,0.3,3.0,Chlorophyll,Own Tempo,Moody,9,Paldea,No
+952,Scovillain,Grass,Fire,65,108,65,108,65,75,486,Spicy,0.9,15.0,Chlorophyll,Insomnia,Moody,9,Paldea,No
+953,Rellor,Bug,,30,55,69,45,69,15,283,Rolling,0.2,1.0,Compound Eyes,,,9,Paldea,No
+954,Rabsca,Bug,Psychic,75,50,85,115,100,15,440,Rolling,0.3,3.5,Synchronize,,,9,Paldea,No
+955,Flittle,Psychic,,30,35,30,55,30,75,255,Frill,0.2,1.5,Anticipation,Frisk,Speed Boost,9,Paldea,No
+956,Espathra,Psychic,,95,60,60,101,60,105,481,Ostrich,1.9,90.0,Opportunist,Frisk,Speed Boost,9,Paldea,No
+957,Tinkatink,Fairy,Steel,50,45,45,35,64,58,297,Metalsmith,0.4,8.9,Mold Breaker,Own Tempo,Pickpocket,9,Paldea,No
+958,Tinkatuff,Fairy,Steel,65,55,55,45,82,78,380,Metalsmith,0.7,59.5,Mold Breaker,Own Tempo,Pickpocket,9,Paldea,No
+959,Tinkaton,Fairy,Steel,85,75,77,70,105,94,506,Metalsmith,0.7,112.8,Mold Breaker,Own Tempo,Pickpocket,9,Paldea,No
+960,Wiglett,Water,,10,55,35,30,25,85,240,Garden Eel,1.2,1.8,Gooey,Rattled,,9,Paldea,No
+961,Wugtrio,Water,,35,100,50,50,70,120,425,Garden Eel,1.2,5.4,Gooey,Rattled,,9,Paldea,No
+962,Bombirdier,Flying,Dark,70,103,85,60,85,82,485,Item Drop,1.5,42.9,Big Pecks,Keen Eye,Rocky Payload,9,Paldea,No
+963,Finizen,Water,,70,45,40,45,40,75,315,Dolphin,1.3,60.2,Water Veil,,,9,Paldea,No
+964,Palafin,Water,,100,70,72,53,62,100,457,Dolphin,1.3,60.2,Zero to Hero,,,9,Paldea,No
+965,Varoom,Steel,Poison,45,70,63,30,45,63,316,Single-Cyl,1.0,35.0,Overcoat,,,9,Paldea,No
+966,Revavroom,Steel,Poison,80,119,90,54,67,90,500,Multi-Cyl,1.8,120.0,Overcoat,,,9,Paldea,No
+967,Cyclizar,Dragon,Normal,70,95,65,85,65,121,501,Mount,1.6,63.0,Shed Skin,,,9,Paldea,No
+968,Orthworm,Steel,,70,85,145,60,55,40,455,Earthworm,2.5,310.0,Earth Eater,,,9,Paldea,No
+969,Glimmet,Rock,Poison,48,35,42,105,60,60,350,Ore,0.5,8.0,Toxic Debris,,,9,Paldea,No
+970,Glimmora,Rock,Poison,83,55,90,130,81,86,525,Ore,1.5,45.0,Toxic Debris,,,9,Paldea,No
+971,Greavard,Ghost,,60,65,45,45,45,50,310,Ghost Dog,0.6,35.0,Pickup,,,9,Paldea,No
+972,Houndstone,Ghost,,72,101,100,100,100,68,541,Ghost Dog,2.0,15.0,Sand Rush,,,9,Paldea,No
+973,Flamigo,Flying,Fighting,82,115,74,75,64,90,500,Flamingo,1.6,37.0,Scrappy,Tangled Feet,Costar,9,Paldea,No
+974,Cetoddle,Ice,,108,68,45,30,40,43,334,Terra Whale,1.2,45.0,Thick Fat,Snow Cloak,Sheer Force,9,Paldea,No
+975,Cetitan,Ice,,170,113,65,45,55,73,521,Terra Whale,4.5,700.0,Thick Fat,Slush Rush,Sheer Force,9,Paldea,No
+976,Veluza,Water,Psychic,90,102,73,78,65,70,478,Jettison,2.5,90.0,Mold Breaker,,,9,Paldea,No
+977,Dondozo,Water,,150,100,115,65,65,35,530,Big Catfish,1.2,220.0,Unaware,Oblivious,Water Veil,9,Paldea,No
+978,Tatsugiri,Dragon,Water,68,50,60,120,95,72,465,Mimicry,0.3,8.0,Commander,,,9,Paldea,No
+979,Annihilape,Fighting,Ghost,110,115,80,50,90,90,535,Rage Monkey,1.2,56.0,Vital Spirit,Inner Focus,Defiant,9,Paldea,No
+980,Clodsire,Poison,Ground,130,75,60,45,100,20,430,Spiny Fish,1.8,223.0,Poison Point,Water Absorb,Unaware,9,Paldea,No
+981,Farigiraf,Normal,Psychic,120,90,70,90,95,60,525,Long Neck,3.2,160.0,Cud Chew,Armor Tail,,9,Paldea,No
+982,Dudunsparce,Normal,,125,100,80,85,75,55,520,Land Snake,3.6,39.2,Serene Grace,Run Away,Rattled,9,Paldea,No
+983,Kingambit,Dark,Steel,100,135,120,60,85,50,550,Big Blade,2.0,120.0,Defiant,Supreme Overlord,Pressure,9,Paldea,No
+984,Great Tusk,Ground,Fighting,115,131,131,53,53,87,570,Paradox,2.2,320.0,Protosynthesis,,,9,Paldea,No
+985,Scream Tail,Fairy,Psychic,115,65,99,65,115,111,570,Paradox,1.2,8.0,Protosynthesis,,,9,Paldea,No
+986,Brute Bonnet,Grass,Dark,111,127,99,79,99,55,570,Paradox,1.2,21.5,Protosynthesis,,,9,Paldea,No
+987,Flutter Mane,Ghost,Fairy,55,55,55,135,135,135,570,Paradox,1.4,4.0,Protosynthesis,,,9,Paldea,No
+988,Slither Wing,Bug,Fighting,85,135,79,85,105,81,570,Paradox,3.2,92.0,Protosynthesis,,,9,Paldea,No
+989,Sandy Shocks,Electric,Ground,115,81,91,115,81,87,570,Paradox,2.3,60.0,Protosynthesis,,,9,Paldea,No
+990,Iron Treads,Ground,Steel,90,112,120,72,70,106,570,Paradox,0.9,240.0,Quark Drive,,,9,Paldea,No
+991,Iron Bundle,Ice,Water,56,80,114,124,60,136,570,Paradox,0.6,11.0,Quark Drive,,,9,Paldea,No
+992,Iron Hands,Fighting,Electric,154,140,108,50,68,50,570,Paradox,1.8,380.5,Quark Drive,,,9,Paldea,No
+993,Iron Jugulis,Dark,Flying,94,80,86,122,80,108,570,Paradox,1.2,111.0,Quark Drive,,,9,Paldea,No
+994,Iron Moth,Fire,Poison,80,70,60,140,110,110,570,Paradox,1.2,36.0,Quark Drive,,,9,Paldea,No
+995,Iron Thorns,Rock,Electric,100,134,110,70,84,72,570,Paradox,1.6,303.0,Quark Drive,,,9,Paldea,No
+996,Frigibax,Dragon,Ice,65,75,45,35,45,55,320,Ice Fin,0.5,17.0,Thermal Exchange,,,9,Paldea,No
+997,Arctibax,Dragon,Ice,90,95,66,45,65,58,419,Ice Fin,0.8,30.0,Thermal Exchange,,,9,Paldea,No
+998,Baxcalibur,Dragon,Ice,115,145,92,75,86,87,600,Ice Dragon,2.1,210.0,Thermal Exchange,,,9,Paldea,No
+999,Gimmighoul,Ghost,,45,30,70,75,70,10,300,Coin Chest,0.3,5.0,Rattled,,,9,Paldea,No
+1000,Gholdengo,Steel,Ghost,87,60,95,133,91,84,550,Coin Entity,1.2,30.0,Good as Gold,,,9,Paldea,No
+1001,Wo-Chien,Dark,Grass,85,85,100,95,135,70,570,Ruinous,1.5,74.2,Tablets of Ruin,,,9,Paldea,Legendary
+1002,Chien-Pao,Dark,Ice,80,120,80,90,65,135,570,Ruinous,1.9,152.2,Sword of Ruin,,,9,Paldea,Legendary
+1003,Ting-Lu,Dark,Ground,155,110,125,55,80,45,570,Ruinous,2.7,699.7,Vessel of Ruin,,,9,Paldea,Legendary
+1004,Chi-Yu,Dark,Fire,55,80,80,135,120,100,570,Ruinous,0.4,4.9,Beads of Ruin,,,9,Paldea,Legendary
+1005,Roaring Moon,Dragon,Dark,105,139,71,55,101,119,590,Paradox,2.0,380.0,Protosynthesis,,,9,Paldea,No
+1006,Iron Valiant,Fairy,Fighting,74,130,90,120,60,116,590,Paradox,1.4,35.0,Quark Drive,,,9,Paldea,No
+1007,Koraidon,Fighting,Dragon,100,135,115,85,100,135,670,Paradox,2.5,303.0,Orichalcum Pulse,,,9,Paldea,Legendary
+1008,Miraidon,Electric,Dragon,100,85,100,135,115,135,670,Paradox,3.5,240.0,Hadron Engine,,,9,Paldea,Legendary
+1009,Walking Wake,Water,Dragon,99,83,91,125,83,109,590,Paradox,3.5,280.0,Protosynthesis,,,9,Paldea,No
+1010,Iron Leaves,Grass,Psychic,90,130,88,70,108,104,590,Paradox,1.5,125.0,Quark Drive,,,9,Paldea,No
+1011,Dipplin,Grass,Dragon,80,80,110,95,80,40,485,Candy Apple,0.4,4.4,Supersweet Syrup,Gluttony,,9,Paldea,No
+1012,Poltchageist,Grass,Ghost,40,45,45,74,54,50,308,Matcha,0.1,1.1,Hospitality,,,9,Paldea,No
+1013,Sinistcha,Grass,Ghost,71,60,106,121,80,42,480,Matcha,0.2,2.2,Hospitality,,,9,Paldea,No
+1014,Okidogi,Poison,Fighting,88,128,115,58,86,80,555,Retainer,1.8,92.2,Toxic Chain,,,9,Paldea,Legendary
+1015,Munkidori,Poison,Psychic,78,75,91,116,86,108,554,Retainer,1.0,12.2,Toxic Chain,,,9,Paldea,Legendary
+1016,Fezandipiti,Poison,Fairy,88,91,82,70,125,97,553,Retainer,1.4,30.1,Toxic Chain,,,9,Paldea,Legendary
+1017,Ogerpon,Grass,,80,120,84,60,96,110,550,Mask,1.2,39.8,Defiant,,,9,Paldea,Legendary
+1018,Archaludon,Steel,Dragon,90,105,130,125,65,85,600,Alloy,2.0,60.0,Stamina,Sturdy,Stalwart,9,Paldea,No
+1019,Hydrapple,Grass,Dragon,106,80,110,120,80,44,540,Apple Hydra,0.5,93.0,Supersweet Syrup,Regenerator,,9,Paldea,No
+1020,Gouging Fire,Fire,Dragon,105,115,121,65,93,91,590,Paradox,3.5,590.0,Protosynthesis,,,9,Paldea,No
+1021,Raging Bolt,Electric,Dragon,125,73,91,137,89,75,590,Paradox,5.2,480.0,Protosynthesis,,,9,Paldea,No
+1022,Iron Boulder,Rock,Psychic,90,120,80,68,108,124,590,Paradox,1.5,162.5,Quark Drive,,,9,Paldea,No
+1023,Iron Crown,Steel,Psychic,90,72,100,122,108,98,590,Paradox,1.4,156.0,Quark Drive,,,9,Paldea,No
+1024,Terapagos,Normal,,90,65,85,65,85,60,450,Tera,0.3,16.8,Tera Shell,,,9,Paldea,Legendary
+1025,Pecharunt,Poison,Ghost,88,88,160,88,88,88,600,Subjugation,0.3,0.3,Poison Puppeteer,,,9,Paldea,Mythical
