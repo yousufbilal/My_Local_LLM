@@ -7,9 +7,11 @@ import os
 
 model = OllamaLLM(model="llama3.2")
 
+#it is important when using RAG to restrict the prompt otherwise the model will halucinate 
 template = """
-You are an exeprt in answering questions about a pizza restaurant
-
+ONLY use the reviews provided below to answer the question.
+If the answer is not found in the reviews, say "I don't have enough information."
+Do NOT make up pizza names or any information not in the reviews.
 Here are some relevant reviews: {reviews}
 
 Here is the question to answer: {questions}
@@ -32,7 +34,7 @@ while True:
     chain = prompt | model
 
     reviews = retriever.invoke(user_input)
-    result = chain.invoke({"reviews":reviews,"questions": {user_input}})
+    result = chain.invoke({"reviews":reviews,"questions": user_input})
 
     print(result)
 
