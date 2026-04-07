@@ -1,5 +1,6 @@
 from langchain_ollama.llms import OllamaLLM
-from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate , MessagesPlaceholder
+from langchain_core.messages import HumanMessage, AIMessage
 import ollama
 import json
 from vector import retriever
@@ -8,21 +9,38 @@ import os
 model = OllamaLLM(model="llama3.2")
 
 #it is important when using RAG to restrict the prompt otherwise the model will halucinate 
-template = """
-ONLY use the Pokemon data provided below to answer the question.
-If the answer is not found, say "I don't have enough information."
+# template = """
+# ONLY use the Pokemon data provided below to answer the question.
+# If the answer is not found, say "I don't have enough information."
 
-Here is the relevant Pokemon data: {reviews}
+# Here is the relevant Pokemon data: {reviews}
 
-Question: {questions}
-"""
-prompt = ChatPromptTemplate.from_template(template)
+# Question: {questions}
+# """
+
+# prompt = ChatPromptTemplate.format_messages([
+#     ("system", "You are a helpful assistant."),
+#     MessagesPlaceholder(variable_name="chat_history"),
+#     ("human", "{input}"),
+# ])
+
+# Change this line:
+prompt = ChatPromptTemplate.from_messages([  
+    #This line here determines the role and behaviour of the model 
+    # ("system", "You are a helpful assistant."),
+    MessagesPlaceholder(variable_name="chat_history"),
+    ("human", "{input}"),
+])
+
+# prompt = ChatPromptTemplate.from_template(template)
 
 chain = prompt | model
 
-result = chain.invoke({"reviews":[],"questions": ""})
+# 4. The "Thread" List (This stays alive while the script runs)
+chat_history = []
 
-print(result)
+# result = chain.invoke({"reviews":[],"questions": ""})
+# print(result)
 
 while True:
 
@@ -31,12 +49,22 @@ while True:
     if user_input == "quit":
         break
 
-    chain = prompt | model
+    # chain = prompt | model
 
-    reviews = retriever.invoke(user_input)
-    result = chain.invoke({"reviews":reviews,"questions": user_input})
+    # reviews = retriever.invoke(user_input)
+    # result = chain.invoke({"reviews":reviews,"questions": user_input})
+    # print(result)
 
-    print(result)
+    response = chain.invoke({
+        "chat_history": chat_history,
+        "input": user_input
+    })
+    print(f"AI: {response}")
+
+    chat_history.append(HumanMessage(content=user_input))
+    chat_history.append(AIMessage(content=response))
+
+
 
 #implement LangChain's built-in conversational RAG stack so the agent can have context of the conversation
 
