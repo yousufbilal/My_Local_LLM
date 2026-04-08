@@ -10,10 +10,11 @@ model = OllamaLLM(model="llama3.2")
 
 # Change this line: adding RAG to here with REVIEWS
 prompt = ChatPromptTemplate.from_messages([  
-    #This line here determines the role and behaviour of the model 
-     ("system", """ONLY use the Pokemon data provided below to answer the question.
-      If the answer is not found, say "I don't have enough information."
-      Here is the relevant Pokemon data: {reviews}."""),
+    ("system", """You are a friendly and helpful AI assistant.
+    
+    1. If the user asks about Pokemon, use this data to answer accurately: {reviews}
+    2. If the user is just chatting (saying hello, asking how you are), respond naturally like a friend.
+    3. If the user asks a Pokemon question but the data above is empty, tell them you don't have the specific stats for that Pokemon yet."""),
     
     MessagesPlaceholder(variable_name="chat_history"),
     ("human", "{input}"),
@@ -24,7 +25,7 @@ chain = prompt | model
 # 4. The "Thread" List (This stays alive while the script runs)
 chat_history = []
 
-
+print("AI: Hello! How can I help you today?")
 
 while True:
     user_input = input('You: ')
@@ -38,10 +39,15 @@ while True:
     
     for doc in docs:
         temp_list.append(doc.page_content)
-        reviews = "\n".join(temp_list)
+    
+    
+    if temp_list:
+        reviews_data = "\n".join(temp_list)
+    else:
+        reviews_data = "No specific Pokemon data found for this message."
 
     response = chain.invoke({
-        "reviews": reviews,      # The RAG data
+        "reviews": reviews_data,      # The RAG data
         "chat_history": chat_history, # The Memory
         "input": user_input           # The Current Question
     })
