@@ -24,8 +24,7 @@ if add_pokemon:
             metadata={"name": row["Name"], "type1": row["Type1"]},
             id=str(i)
         )
-        # ids.append(str(i))
-        # documents.append(document)
+        
         ids.append(str(i))
         Pokemons.append(pokemon)
         
