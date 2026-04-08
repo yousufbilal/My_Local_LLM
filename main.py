@@ -1,10 +1,12 @@
 from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate , MessagesPlaceholder
 from langchain_core.messages import HumanMessage, AIMessage
+from vector import pokemon_retriever, movies_retriever
+from langchain.chains.router import MultiRetrievalQAChain
 import ollama
 import json
-from vector import retriever
 import os
+
 
 model = OllamaLLM(model="llama3.2")
 
@@ -12,9 +14,9 @@ model = OllamaLLM(model="llama3.2")
 prompt = ChatPromptTemplate.from_messages([  
     ("system", """You are a friendly and helpful AI assistant.
     
-    1. If the user asks about Pokemon, use this data to answer accurately: {reviews}
+    1. If the user asks about Pokemon, Movies use this data to answer accurately: {reviews}
     2. If the user is just chatting (saying hello, asking how you are), respond naturally like a friend.
-    3. If the user asks a Pokemon question but the data above is empty, tell them you don't have the specific stats for that Pokemon yet."""),
+    3. If the user asks a Pokemon or a Movie question but the data above is empty, tell them you don't have the specific information for that Pokemon or movie yet."""),
     
     MessagesPlaceholder(variable_name="chat_history"),
     ("human", "{input}"),
@@ -28,18 +30,17 @@ chat_history = []
 print("AI: Hello! How can I help you today?")
 
 while True:
+    temp_list = []
+
     user_input = input('You: ')
 
     if user_input == "quit":
         break
 
-    docs = retriever.invoke(user_input)
-    # reviews_data = "\n".join([doc.page_content for doc in docs])
-    temp_list = []
-    
+    docs = pokemon_retriever.invoke(user_input)
+
     for doc in docs:
         temp_list.append(doc.page_content)
-    
     
     if temp_list:
         reviews_data = "\n".join(temp_list)
