@@ -5,13 +5,18 @@ import pandas as pd
 import os
 
 # 1. Load both CSVs
-df = pd.read_csv("gen9_pokemon.csv")
-df_movie = pd.read_csv("movies.csv")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(BASE_DIR)
+DATA_DIR = os.path.join(PROJECT_ROOT, "data")
+STORAGE_DIR = os.path.join(PROJECT_ROOT, "storage")
+
+df = pd.read_csv(os.path.join(DATA_DIR, "gen9_pokemon.csv"))
+df_movie = pd.read_csv(os.path.join(DATA_DIR, "movies.csv"))
 
 embeddings = OllamaEmbeddings(model="mxbai-embed-large")
 
 # --- POKEMON DATABASE SECTION ---
-pk_location = "./chroma_pokemon_db"
+pk_location = os.path.join(STORAGE_DIR, "chroma_pokemon_db")
 add_pokemon = not os.path.exists(pk_location)
 
 if add_pokemon:
@@ -37,7 +42,7 @@ if add_pokemon:
 
 
 # --- MOVIES DATABASE SECTION ---
-movies_location = "./chroma_movies_db"
+movies_location = os.path.join(STORAGE_DIR, "chroma_movies_db")
 add_movies = not os.path.exists(movies_location)
 
 if add_movies:

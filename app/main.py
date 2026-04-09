@@ -1,15 +1,8 @@
 from langchain_ollama.llms import OllamaLLM
-from langchain_core.prompts import ChatPromptTemplate , MessagesPlaceholder
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage, AIMessage
-from vector import pokemon_retriever, movies_retriever
-# from langchain.chains.router import MultiRetrievalQAChain
-import ollama
-import json
-import os
 
-a = 1
-b = 1
-print(a+b)
+from app.vector import pokemon_retriever, movies_retriever
 
 model = OllamaLLM(model="llama3.2")
 
@@ -27,7 +20,7 @@ prompt = ChatPromptTemplate.from_messages([
 
 chain = prompt | model
 
-# 4. The "Thread" List (This stays alive while the script runs)
+# 4. The "Thread" List (This stays alive while the script runs
 chat_history = []
 
 print("AI: Hello! How can I help you today?")
@@ -60,6 +53,8 @@ while True:
 
     chat_history.append(HumanMessage(content=user_input))
     chat_history.append(AIMessage(content=response))
+
+
 
 
 
