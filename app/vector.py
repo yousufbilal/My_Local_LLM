@@ -73,6 +73,3 @@ if add_movies:
 pokemon_retriever = vector_store.as_retriever(search_kwargs={"k": 10})
 movies_retriever = movies_vector_store.as_retriever(search_kwargs={"k": 10})
 
-# # ADD THIS LINE: This fixes the 'ImportError' in your main.py
-# # By default, we will point 'retriever' to the pokemon one
-# retriever = pokemon_retriever
