@@ -2,11 +2,14 @@ from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate , MessagesPlaceholder
 from langchain_core.messages import HumanMessage, AIMessage
 from vector import pokemon_retriever, movies_retriever
-from langchain.chains.router import MultiRetrievalQAChain
+# from langchain.chains.router import MultiRetrievalQAChain
 import ollama
 import json
 import os
 
+a = 1
+b = 1
+print(a+b)
 
 model = OllamaLLM(model="llama3.2")
 
@@ -58,3 +61,59 @@ while True:
     chat_history.append(HumanMessage(content=user_input))
     chat_history.append(AIMessage(content=response))
 
+
+
+#**********************LangChain Query Routing  The Scalable "Tool-Based" Fix **********************
+
+# from langchain_core.tools import create_retriever_tool
+
+# # 1. Turn your retrievers into "Tools"
+# # This is where it scales: just keep adding tools to this list
+# pokemon_tool = create_retriever_tool(
+#     pokemon_retriever,
+#     "pokemon_search",
+#     "Search for info about Pokemon stats, types, and lore."
+# )
+
+# movie_tool = create_retriever_tool(
+#     movies_retriever,
+#     "movie_search",
+#     "Search for info about movie plots, actors, and reviews."
+# )
+
+# tools = [pokemon_tool, movie_tool]
+
+# # 2. Bind the tools to your model
+# # This gives Llama 3.2 the ability to "pick" a tool
+# model_with_tools = model.bind_tools(tools)
+
+# # 3. Your Updated Loop
+# while True:
+#     user_input = input('You: ')
+#     if user_input == "quit": break
+
+#     # Ask the model which tool to use
+#     ai_msg = model_with_tools.invoke(user_input)
+    
+#     reviews_data = ""
+    
+#     # Check if the AI decided to use a tool
+#     if ai_msg.tool_calls:
+#         for tool_call in ai_msg.tool_calls:
+#             # Match the tool call to the actual retriever
+#             selected_tool = next(t for t in tools if t.name == tool_call["name"])
+#             tool_output = selected_tool.invoke(tool_call["args"])
+#             reviews_data += str(tool_output) + "\n"
+#     else:
+#         reviews_data = "No specific data found."
+
+#     # YOUR EXACT CHAIN INVOKE UNCHANGED
+#     response = chain.invoke({
+#         "reviews": reviews_data,      
+#         "chat_history": chat_history, 
+#         "input": user_input           
+#     })
+
+#     print(f"AI: {response}")
+#     chat_history.append(HumanMessage(content=user_input))
+#     chat_history.append(AIMessage(content=response))
