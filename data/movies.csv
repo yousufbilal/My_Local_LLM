@@ -1,11 +1,26 @@
-Movie Name,Director,Main Actors,Release Date,Plot Summary,Box Office (USD)
-Avatar 3,James Cameron,Sam Worthington; Zoe Saldana,2025-12-19,Jake Sully and Neytiri face new threats on Pandora as humans escalate their colonization efforts.,2300000000
-Avengers: Secret Wars,Anthony Russo; Joe Russo,Robert Downey Jr.; Chris Hemsworth; Tom Holland,2025-05-02,Multiverse heroes unite to stop a collapsing reality caused by interdimensional war.,2100000000
-The Batman Part II,Matt Reeves,Robert Pattinson; Zoë Kravitz,2025-10-03,Batman confronts a deeper conspiracy in Gotham while battling psychological and physical threats.,1200000000
-Mission: Impossible – Dead Reckoning Part Two,Christopher McQuarrie,Tom Cruise; Rebecca Ferguson,2025-06-27,Ethan Hunt races to stop a rogue AI threatening global security.,1100000000
-Fantastic Four,Matt Shakman,Pedro Pascal; Vanessa Kirby,2025-07-25,Marvel’s first family gains powers and faces a cosmic-level threat.,1050000000
-Superman: Legacy,James Gunn,David Corenswet; Rachel Brosnahan,2025-07-11,A young Superman balances his Kryptonian heritage with his human upbringing.,1000000000
-Jurassic World 4,Gareth Edwards,Scarlett Johansson; Jonathan Bailey,2025-08-15,"Dinosaurs spread across the globe, forcing humanity to adapt or face extinction.",950000000
-Spider-Man 4,Destin Daniel Cretton,Tom Holland; Zendaya,2025-11-07,Peter Parker faces new villains while rebuilding his identity after losing public recognition.,900000000
-Inside Out 2,Pete Docter,Amy Poehler; Phyllis Smith,2025-03-14,Riley navigates teenage emotions as new feelings disrupt her inner world.,850000000
-Deadpool 3,Shawn Levy,Ryan Reynolds; Hugh Jackman,2025-02-14,"Deadpool breaks into the multiverse, teaming up with Wolverine for chaotic adventures.",800000000
+MovieID,Title,Genre1,Genre2,Year,Director,LeadActor,LeadActress,Runtime(min),Budget(M$),BoxOffice(M$),IMDb_Rating,RottenTomatoes(%),Language,Country,Studio,Sequel,Franchise,Awards
+1001,Echoes of the Void,Sci-Fi,Thriller,2019,Nadia Volkov,Marcus Hale,Sera Okonkwo,128,85,212,7.8,84,English,USA,Parallax Films,No,Standalone,Saturn Award - Best Picture
+1002,The Last Cartographer,Adventure,Drama,2021,Emilio Saenz,Theo Wren,Linh Bao,142,110,380,8.1,91,English,UK,Meridian Studios,No,Standalone,BAFTA Nominee
+1003,Crimson Latitude,Action,Spy,2020,Jared Okoro,Felix Cross,Anya Petrova,119,200,620,7.3,76,English,USA/UK,Apex Pictures,Yes,Crimson Series,None
+1004,Crimson Meridian,Action,Spy,2022,Jared Okoro,Felix Cross,Anya Petrova,124,240,810,7.5,79,English,USA/UK,Apex Pictures,Yes,Crimson Series,None
+1005,Daughters of the Deep,Drama,Mystery,2018,Clara Nwosu,N/A,Ifeoma Adaeze,135,40,98,8.4,95,Igbo,Nigeria,Afro Lens,No,Standalone,Cannes - Jury Prize
+1006,The Brass Meridian,Steampunk,Fantasy,2023,Otto Vanderhaas,Roland Fitch,Greta Holm,157,175,490,7.9,88,English/German,Germany,Dampfwerk AG,No,Standalone,VFX Society Award
+1007,Neon Requiem,Cyberpunk,Noir,2022,Yuki Tanaka,Daishi Ren,Sable Cruz,111,55,143,7.6,82,Japanese/English,Japan,Tokyovision,No,Standalone,Sitges Best Film
+1008,Under the Salt Flats,Western,Drama,2017,Harlan Briggs,Buck Navarro,Rosa Delcampo,148,30,67,8.0,90,English/Spanish,USA,Dustpan Collective,No,Standalone,Independent Spirit Award
+1009,Pale Signal,Horror,Sci-Fi,2020,Mira Holloway,N/A,Cassie Vance,97,12,44,6.9,71,English,Canada,Coldframe Pictures,No,Standalone,Fantasia Fest Winner
+1010,The Sovereign Bell,Historical,War,2021,Dmitri Voloshyn,Ivan Koval,Nadiya Lysenko,183,95,221,8.3,93,Ukrainian,Ukraine,Kyiv Arc Films,No,Standalone,Oscar Nominee - Intl Feature
+1011,Stormwatcher,Disaster,Thriller,2023,Reggie Ashford,Leo Tan,Priya Nair,133,300,910,6.8,62,English,USA,Torrent Global,Yes,Stormwatcher Trilogy,MTV Movie Award
+1012,Stormwatcher: Eye,Disaster,Action,2025,Reggie Ashford,Leo Tan,Priya Nair,140,350,1100,7.0,67,English,USA,Torrent Global,Yes,Stormwatcher Trilogy,None
+1013,Letters from Avalon,Romance,Fantasy,2019,Saoirse Dempsey,Cal Rourke,Fiona Blaine,126,45,189,7.7,85,English/Irish,Ireland,Claddagh Films,No,Standalone,IFTA Best Film
+1014,The Obsidian Protocol,Espionage,Sci-Fi,2022,Viktor Strand,Nikolai Frost,Ines Moreau,138,150,407,7.4,80,English/French,France,Bloc Noir,No,Standalone,None
+1015,Hollow Sun,Animated,Adventure,2023,Amara Bell,N/A,N/A,94,80,430,8.2,97,English,USA,Prism Animation,No,Standalone,Annie Award Best Feature
+1016,The Weight of Rivers,Drama,,2018,Hua Jingyi,Chen Wei,Liu Meiling,152,20,61,8.5,96,Mandarin,China,Riverstone Pictures,No,Standalone,Berlin Golden Bear
+1017,Gravity's Jest,Comedy,Sci-Fi,2021,Pablo Ferreiro,Mateo Ruiz,Camila Soto,104,60,175,7.2,78,Spanish/English,Argentina,Pampa Cinema,No,Standalone,Havana Film Fest Winner
+1018,Project Moonface,Spy,Comedy,2020,Desmond Osei,Kwame Asante,Abena Ofori,116,70,222,7.0,74,English/Twi,Ghana,Accra Projections,No,Standalone,None
+1019,The Frostbound Kingdom,Fantasy,War,2024,Elara Whitmore,Gareth Stone,Lira Ashvane,196,280,870,8.0,89,English,New Zealand,Glacial Gate Studios,Yes,Frostbound Saga,Hugo Award Nominee
+1020,Dust & Stars,Sci-Fi,Drama,2019,Rashid Al-Mansouri,Omar Khalil,Fatima Nassar,121,35,88,7.9,87,Arabic,UAE,Desert Reel,No,Standalone,Dubai Intl Film Festival
+1021,The Gilded Predator,Thriller,Crime,2022,Sonja Berglund,Axel Lund,Sigrid Holt,129,50,160,7.6,83,Norwegian/English,Norway,Nordic Crest,No,Standalone,None
+1022,Mirrorborn,Horror,Psychological,2021,Isabel Crane,N/A,Della Park,103,8,29,7.1,79,English,South Korea/USA,Liminal Films,No,Standalone,Sundance Jury Prize
+1023,Archipelago Rising,Action,Political,2023,Cesar Montoya,Diego Vargas,Isabella Reyes,144,120,340,7.3,77,Spanish,Colombia,Mar Films,No,Standalone,None
+1024,Song of the Iron Road,Musical,Historical,2020,Lenora Chan,N/A,Ruby Fong,138,65,202,8.1,92,Cantonese/English,Canada,Lantern Gate,No,Standalone,Genie Award Best Picture
+1025,Velvet Frequency,Sci-Fi,Romance,2024,Jonah Pierce,Eli Ward,Sasha Bloom,115,45,137,7.5,81,English,UK,Softwave Studios,No,Standalone,None

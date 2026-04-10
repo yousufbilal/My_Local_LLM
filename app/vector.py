@@ -5,11 +5,10 @@ import pandas as pd
 import os
 
 # 1. Load both CSVs
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_ROOT = os.path.dirname(BASE_DIR)
-DATA_DIR = os.path.join(PROJECT_ROOT, "data")
-STORAGE_DIR = os.path.join(PROJECT_ROOT, "storage")
+DATA_DIR = "./data"
+STORAGE_DIR = "./storage"
 
+#read both the files
 df = pd.read_csv(os.path.join(DATA_DIR, "gen9_pokemon.csv"))
 df_movie = pd.read_csv(os.path.join(DATA_DIR, "movies.csv"))
 
@@ -24,8 +23,9 @@ if add_pokemon:
     ids = []
     for i, row in df.iterrows():
         pokemon = Document(
-            page_content=f"Name: {row['Name']} | Type: {row['Type1']} | Region: {row['Region']}",
-            metadata={"name": row["Name"], "type1": row["Type1"]},
+            page_content=f"Name: {row['Name']} | Type1: {row['Type1']} | Attack: {row['Attack']} | Total: {row['Total']} | Category: {row['Category']}",
+            
+            metadata={"name": row["Name"], "type1": row["Type1"],"category": row["Category"], "is_legendary": row["Legendary/Mythical"], "source": "pokemon_db"},
             id=str(i)
         )
         ids.append(str(i))
@@ -48,15 +48,14 @@ add_movies = not os.path.exists(movies_location)
 if add_movies:
     Movies = []
     m_ids = []
-    for i, row in df_movie.iterrows():
+    for i, row in df_movie.iterrows():        # FIXED: indented inside if block
         movie = Document(
-            page_content=(f"Movie Name: {row['Movie Name']} | Director: {row['Director']} | Main Actors: {row['Main Actors']} | Plot Summary: {row['Plot Summary']} | Box Office:: {row['Box Office (USD)']}"),
-            # FIXED: Used 'Movie Name' and 'Director' instead of Title/Genre
-            metadata={"title": row['Movie Name'], "director": row['Director']},
+            page_content=(f"MovieID: {row['MovieID']} | Title: {row['Title']} | Genre1: {row['Genre1']} | Year: {row['Year']} | Director: {row['Director']} | LeadActor: {row['LeadActor']} | LeadActress: {row['LeadActress']} | Budget(M$): {row['Budget(M$)']}"),
+            metadata={"id": row['MovieID'], "title": row['Title'], "director": row['Director'], "genre": row['Genre1'], "year": int(row['Year']), "source": "movies_db"},
             id=str(i)
         )
-        m_ids.append(str(i))
-        Movies.append(movie)
+        m_ids.append(str(i))                  # FIXED: already correct indent
+        Movies.append(movie)                  # FIXED: already correct indent
 
 movies_vector_store = Chroma(
     collection_name="movies_collection",
