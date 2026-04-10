@@ -50,7 +50,7 @@ if add_movies:
     m_ids = []
     for i, row in df_movie.iterrows():
         movie = Document(
-            page_content=f"Movie Name: {row['Movie Name']} | Director: {row['Director']} | Main Actors: {row['Main Actors']} | Plot Summary: {row['Plot Summary']}",
+            page_content=(f"Movie Name: {row['Movie Name']} | Director: {row['Director']} | Main Actors: {row['Main Actors']} | Plot Summary: {row['Plot Summary']} | Box Office:: {row['Box Office (USD)']}"),
             # FIXED: Used 'Movie Name' and 'Director' instead of Title/Genre
             metadata={"title": row['Movie Name'], "director": row['Director']},
             id=str(i)
